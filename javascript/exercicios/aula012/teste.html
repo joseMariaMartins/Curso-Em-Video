@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALANA</title>
+    <style>  
+        body {
+            background-color: #fdafd0;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 90px;
+        }
+
+        input {
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 191, 250);
+            border-radius: 10px;
+            height: 35px;
+            width: 400px;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            display: block;
+            text-align: center;
+            border-style: none;
+            border-style: groove;
+        }
+
+        input.txtPais {
+            margin-top: 5px;
+        }
+
+        div {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você comeu direito hoje?</h1>
+    <input type="text" id="texto" class="texto">
+    <input type="button" value="Confirmar" id="button" onclick="verificarComida()">
+
+    <div id="res"></div>
+
+    <script>
+        function verificarComida() {
+            var inputTexto = document.getElementById('texto');
+            var resp = inputTexto.value.toLowerCase();  
+
+            var res = document.getElementById('res');
+
+            if (resp === 'sim') { 
+                res.innerHTML = `<p>Juninho esta feliz e vai te encher de beijinhos</p>`;
+            } else {
+                res.innerHTML = `<p>Juninho esta bravo e vai ficar com drama o resto do dia</p>`;
+            } 
+        }
+    </script>
+</body>
+</html>

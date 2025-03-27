@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;900&family=Sriracha&display=swap');
+
+:root {
+    --font-family: 'Heebo', sans-serif;
+    --font-family: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+header {
+    background-color: #005a90;
+    font-family: 'Heebo';
+    min-height: 90px;
+    text-align: center;
+    padding-top: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+
+
+nav {
+    background-color: #468dc8;
+    font-family: 'Heebo';
+    text-align: center;
+    padding: 20px;
+    margin-left: 13%;
+    margin-right: 13%
+}
+
+.texto-cabecalho {
+    font-weight: lighter;
+    text-align: center;
+    margin: 0px;
+}
+
+a:hover {
+    background-color: #176ba3;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+main {
+    background-color: #8ba9c6;
+    font-weight: bolder;
+    padding-top: 35px;
+    margin-left: 13%;
+    margin-right: 13%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div.video {
+    margin-bottom: 30px;
+    margin: 0 -20px 30px;
+    padding: 20px;
+    padding-bottom: 56.6%;
+    position: relative;
+} 
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+h2 {
+    font-family: Heebo;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+p {
+    font-weight: lighter;
+    font-family: 'Heebo';
+    padding-bottom: 20px;
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+aside {
+    background-color: #468dc8;
+    border-radius: 10px;
+}
+
+h3 {
+    background-color: #005a90;
+    padding: 40px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    margin: 10px;
+}
+
+footer {
+    background-color: #005a90;
+    max-height: 75px;
+    text-align: center;
+    font-size: 1em;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0% 30% 20px 30%;
+}
+
+footer > p > a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}

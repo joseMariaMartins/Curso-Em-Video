@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coisinha ai</title>
+    <style>
+        body {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        input {
+            color: rgb(255, 255, 255);
+            background-color: rgb(58, 58, 58);
+            border-radius: 10px;
+            height: 35px;
+            width: 400px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            border-style: none;
+        }
+
+        input.txtPais {
+            margin-bottom: 8px;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coisinho ai</h1>
+    <input type="text" class="txtPais" id="txtPais">
+    <input type="button" value="Confirmar" onclick="confirmar()">
+
+    <div id="res"></div>
+
+    <script>
+
+
+        function confirmar() {
+            var txtPais = document.querySelector('input.txtPais');
+            var resp = txtPais.value;
+
+            var res = document.querySelector('div#res');
+
+            if (resp == 'Brasil') {
+                res.innerHTML = `<p>Você é Brasileiro</p>`;
+            } else {
+                res.innerHTML = `<p>Você é Estrangeiro</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- var pais = 'França'
+console.log(`Vivendo em ${pais}`)
+if (pais == 'Brasil') {
+    console.log('Voce e Brasileiro')
+} else {
+    console.log('Voce e estrangeiro')
+} -->

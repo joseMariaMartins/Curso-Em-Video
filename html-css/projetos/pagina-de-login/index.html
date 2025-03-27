@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landding Page</title>
+    <style>
+        body {
+            background-image: url(images.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+        div {
+            background-color: rgba(0, 0, 0, 0.219);
+            border-radius: 30px;
+            height: 260px;
+        }
+        input {
+            height: 33px;
+            width: 290px;
+            margin: 3px 60px 3px 60px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.219);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Faça Login</h1>
+        <input type="text" id="name">
+        <br>
+        <input type="password">
+        <br>
+        <input type="button" value="Confirmar" id="button" onclick="Confirmar()">
+    </div>
+
+    <script>
+        var nome = querySelectorById('name').value
+        function Confirmar() {
+            window.alert(`Seja bem-vindo, ${name}!`)
+        }
+    </script>
+</body>
+</html>
