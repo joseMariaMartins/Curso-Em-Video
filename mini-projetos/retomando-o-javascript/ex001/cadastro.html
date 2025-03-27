@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div id="form-container">
+        <h1>Ola, Seja bem vindo!</h1>
+        <p>Preencha os campos abaixo para concluir seu cadastro</p>
+        <input type="text" id="username" placeholder="Nome de Usuário"><br>
+        <input type="password" id="password" placeholder="Senha"><br>
+        <button onclick="cadastrar()">Cadastrar</button>
+    </div>
+
+    <div id="confirmation" style="display: none;">
+        <h2>Cadastro realizado com sucesso!</h2>
+        <p>Bem-vindo, <span id="username-display"></span></p>
+    </div>
+
+    <script>
+        function cadastrar() {
+        var username = document.getElementById('username').value
+        var password = document.getElementById('password').value
+
+        document.getElementById('form-container').style.display = 'none'
+        document.getElementById('confirmation').style.display = 'block'
+        document.getElementById('username-display').innerText = username
+        }
+    </script>
+</body>
+</html>

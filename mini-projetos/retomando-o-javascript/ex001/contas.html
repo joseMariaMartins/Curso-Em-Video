@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador de Números</title>
+</head>
+<body>
+    <label for="number">Digite um número:</label>
+    <input type="number" name="Digite um número" id="txtn1"><br>
+    <label for="number">Digite um número:</label>
+    <input type="number" name="Digite um número" id="txtn2"><br>
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res"></div>
+
+    <script>
+        function somar() {
+            var tn1 = Number(document.getElementById('txtn1').value)
+            var tn2 = Number(document.getElementById('txtn2').value)
+            var soma = tn1 + tn2
+            document.getElementById('res').innerText = 'A soma é:' + soma
+        }
+    </script>
+</body>
+</html>

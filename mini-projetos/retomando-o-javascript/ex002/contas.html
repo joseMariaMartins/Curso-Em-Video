@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(238, 130, 238);
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora feia e limitadada</h1>
+    
+    <input type="number" value="Digite um numero" id="txtn1"><br>
+    <input type="number" value="Digite outro numero" id="txtn2"><br><br>
+    <input type="button" value="somar" onclick="somar()">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <input type="button" value="divisão" onclick="dividir()">
+    <div id="res"></div>
+
+    <script>
+        function somar() {
+            let tn1 = Number(document.getElementById('txtn1').value)
+            let tn2 = Number(document.getElementById('txtn2').value)
+            let soma = tn1 + tn2
+            let resultado = document.getElementById('res')
+            res.innerHTML = `A soma de ${tn1} e ${tn2} e igual a: ${soma}`
+        }
+
+        function subtrair() {
+            let tn1 = Number(document.getElementById('txtn1').value)
+            let tn2 = Number(document.getElementById('txtn2').value)
+            let subtracao = tn1 - tn2
+            let resultado = document.getElementById('res')
+            res.innerHTML = `A subtração de ${tn1} e ${tn2} e igual a: ${subtracao}`
+        }
+
+        function multiplicar() {
+            let tn1 = Number(document.getElementById('txtn1').value)
+            let tn2 = Number(document.getElementById('txtn2').value)
+            let multiplicar = tn1 * tn2
+            let resultado = document.getElementById('res')
+            res.innerHTML = `A multiplicação de ${tn1} e ${tn2} e igual a: ${multiplicar}`
+        }
+
+        function dividir() {
+            let tn1 = Number(document.getElementById('txtn1').value)
+            let tn2 = Number(document.getElementById('txtn2').value)
+            let multiplicar = tn1 / tn2
+            let resultado = document.getElementById('res')
+            res.innerHTML = `A divisão de ${tn1} e ${tn2} e igual a: ${multiplicar}`
+        }
+    </script>
+</body>
+</html>
